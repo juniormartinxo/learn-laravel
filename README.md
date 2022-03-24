@@ -13,7 +13,7 @@ php artisan serve
 
 ### Habilitando Live Reload com o Mix :: BrownserSync
 1) Rode o comando `yarn` para instalar as dependências
-2) Inicie o servidor com `php artisan serve` e guarde o resultado da saída `Starting Laravel development server:`
+2) Inicie o servidor com `php artisan serve` e guarde o resultado da saída `Starting Laravel development server:`, ou seja, o endereço que a aplicação irá rodar em `localhost`
 3) Edite o arquivo `webpack.mix.js` e coloque no final o seguinte código:
 
 ```js
