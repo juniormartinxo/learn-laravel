@@ -24,3 +24,9 @@ mix.browserSync({
 
 > O valor de proxy tem que possuir o valor da saída citada no `item 2`
 
+
+### Gerando uma `key` no Laravel
+```
+php artisan key:generate
+```
+
