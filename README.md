@@ -30,3 +30,25 @@ mix.browserSync({
 php artisan key:generate
 ```
 
+
+### Prettier formatter Laravel Blade no VSCode
+1) Instale o plugin do PHP no prettier
+```
+yarn global add prettier @prettier/plugin-php
+```
+
+2) Instalar as extensões no VSCode:
+    - Laravel Bladde Formatter (Laravel Blade formatter for VSCode)
+    - lararavel-blade (Laravel blade syntax highlighting)
+
+3) Reinicie o VSCode e crie o arquivo `.bladeformatterrc` na raiz do projeto e deixe-o desta forma:
+```json
+{
+    "indentSize": 4,
+    "wrapAttributes": "auto",
+    "wrapLineLength": 120,
+    "endWithNewLine": true,
+    "useTabs": false,
+    "sortTailwindcssClasses": true
+}
+```
