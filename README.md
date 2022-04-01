@@ -52,3 +52,42 @@ yarn global add prettier @prettier/plugin-php
     "sortTailwindcssClasses": true
 }
 ```
+
+### Determining If An Uploaded File Is Valid
+```php
+if (Input::file('photo')->isValid())
+{
+    //
+}
+```
+
+### Moving An Uploaded File
+```php
+Input::file('photo')->move($destinationPath);
+Input::file('photo')->move($destinationPath, $fileName);
+```
+
+### Retrieving The Path To An Uploaded File
+```php
+$path = Input::file('photo')->getRealPath();
+```
+
+### Retrieving The Original Name Of An Uploaded File
+```php
+$name = Input::file('photo')->getClientOriginalName();
+```
+
+### Retrieving The Extension Of An Uploaded File
+```php
+$extension = Input::file('photo')->getClientOriginalExtension();
+```
+
+### Retrieving The Size Of An Uploaded File
+```php
+$size = Input::file('photo')->getSize();
+```
+
+### Retrieving The MIME Type Of An Uploaded File
+```php
+$mime = Input::file('photo')->getMimeType();
+```
